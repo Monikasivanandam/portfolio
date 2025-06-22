@@ -1,0 +1,26 @@
+.Project {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  line-height: 2;
+}
+.btn button {
+  margin: 8px;
+}
+.para {
+  color: black;
+  margin: 8px;
+}
+.pro {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.pro:hover {
+  box-shadow: 0 0 15px rgb(6, 47, 233);
+  border: 1px solid rgb(255, 0, 13);
+}
