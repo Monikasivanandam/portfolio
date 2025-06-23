@@ -2,7 +2,7 @@ import React from "react";
 
 import { useState, useEffect } from "react";
 import Navbar from "./pages/Navbar.jsx";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import About from "./pages/About.jsx";
 import Education from "./pages/Education.jsx";
 import Skills from "./pages/Skills.jsx";
@@ -22,7 +22,7 @@ function App() {
   }, [theme]);
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio">
         <Navbar theme={theme} setTheme={setTheme} />
 
         <Routes>

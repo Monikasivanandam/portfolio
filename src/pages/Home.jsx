@@ -25,9 +25,6 @@ const Home = () => {
           <i class="fa-solid fa-envelope"></i>
         </a>
       </div>
-      <button>
-        <a href=""></a>Resume
-      </button>
     </>
   );
 };
