@@ -26,12 +26,15 @@ function App() {
         <Navbar theme={theme} setTheme={setTheme} />
 
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/About" element={<About />}></Route>
-          <Route path="/Education" element={<Education />}></Route>
-          <Route path="/Skills" element={<Skills />}></Route>
-          <Route path="/Project" element={<Project />}></Route>
-          <Route path="/Certificate" element={<Certificate />}></Route>
+          <Route path="/portfolio" element={<Home />}></Route>
+          <Route path="/portfolio/About" element={<About />}></Route>
+          <Route path="/portfolio/Education" element={<Education />}></Route>
+          <Route path="/portfolio/Skills" element={<Skills />}></Route>
+          <Route path="/portfolio/Project" element={<Project />}></Route>
+          <Route
+            path="/portfolio/Certificate"
+            element={<Certificate />}
+          ></Route>
         </Routes>
       </BrowserRouter>
     </>
