@@ -56,9 +56,9 @@ const Project = () => {
           </h5>
           <p className="para">
             Developed a Doctor Appointment Booking Website using the MERN stack.
-            The system allows users to register, log in, and book appointments
-            with doctors based on their availability. It serves as a scalable
-            foundation for real-world healthcare booking systems.
+            The platform allows users to register, log in, and book appointments
+            based on doctor availability. Built as a scalable foundation for
+            real-world healthcare booking systems.
           </p>
           <div className="btn">
             <button type="button" class="btn btn-secondary">

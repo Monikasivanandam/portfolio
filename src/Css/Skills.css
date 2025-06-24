@@ -1,12 +1,63 @@
-.Skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 90px;
-  margin-top: 100px;
-  padding-left: 8vw;
-  height: 100vh;
+.tech-icon-circle {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill:hover {
-  box-shadow: 0px 4px #00d9ff;
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.tech-icon-circle {
+  transition: all 0.4s ease;
+}
+
+.tech-icon-circle:hover {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: white;
+  transform: scale(1.1);
+}
+
+.flip-in {
+  animation: flipIn 0.6s ease forwards;
+}
+
+@keyframes flipIn {
+  from {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}
+
+.tech-icon-circle:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 123, 255, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  }
 }

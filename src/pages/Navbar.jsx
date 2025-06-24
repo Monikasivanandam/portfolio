@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Css/Navbar.css";
 
 function Navbar({ theme, setTheme }) {
@@ -10,19 +11,19 @@ function Navbar({ theme, setTheme }) {
     <nav className="navbar">
       <ul className="nav-links">
         <li>
-          <a href="/About">About</a>
+          <Link to="/About">About</Link>
         </li>
         <li>
-          <a href="/Education">Education</a>
+          <Link to="/Education">Education</Link>
         </li>
         <li>
-          <a href="/Skills">Skills</a>
+          <Link to="/Skills">Skills</Link>
         </li>
         <li>
-          <a href="/Project">Project</a>
+          <Link to="/Project">Project</Link>
         </li>
         <li>
-          <a href="/Certificate">Certificate & Achievements</a>
+          <Link to="/Certificate">Certificate & Achievements</Link>
         </li>
       </ul>
       <div className="theme-toggle">
